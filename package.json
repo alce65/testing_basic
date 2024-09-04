@@ -6,7 +6,8 @@
     "type": "module",
     "scripts": {
         "test": "jest",
-        "test:w": "jest --watch --collectCoverage"
+        "test:w": "jest --watchAll --collectCoverage",
+        "test:node": "node --test **/*native*"
     },
     "keywords": [],
     "author": "",
@@ -24,5 +25,10 @@
                 ]
             }
         }
+    },
+    "jest": {
+        "testPathIgnorePatterns": [
+            "node_native"
+        ]
     }
 }
