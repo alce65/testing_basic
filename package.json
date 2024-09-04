@@ -1,0 +1,28 @@
+{
+    "name": "basic",
+    "version": "1.0.0",
+    "description": "Alejandro Cerezo Lasne",
+    "main": "sample.js",
+    "type": "module",
+    "scripts": {
+        "test": "jest",
+        "test:w": "jest --watch --collectCoverage"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/plugin-transform-modules-commonjs": "^7.24.8",
+        "@types/jest": "^29.5.12",
+        "jest": "^29.7.0"
+    },
+    "babel": {
+        "env": {
+            "test": {
+                "plugins": [
+                    "@babel/plugin-transform-modules-commonjs"
+                ]
+            }
+        }
+    }
+}
