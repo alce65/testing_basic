@@ -253,7 +253,7 @@ describe("Matchers de igualdad y veracidad", () => {
     expect({ a: 1 }).toEqual({ a: 1 });
   });
   it("toBeNull", () => {
-    expect(null).toBeNull();
+    expect(null).toBeNull(); //toBe(null)
   });
   it("toBeUndefined", () => {
     expect(undefined).toBeUndefined();
@@ -265,7 +265,7 @@ describe("Matchers de igualdad y veracidad", () => {
     expect(true).toBeTruthy();
   });
   it("toBeFalsy", () => {
-    expect(false).toBeFalsy();
+    expect(false).toBeFalsy(); // false, 0, -0, '', null, undefined, NaN
   });
 });
 ```
@@ -404,4 +404,3 @@ VIDEO: [Introduction To Testing In JavaScript With Jest](https://www.youtube.com
 - [Jest](https://jestjs.io/)
 - [Test unitarios en Node.js con Jest](https://medium.com/@diego.coder/test-unitarios-en-javascript-con-jest-4f120f5e7124) por diego.coder26 (2022)
 - [Jest Testing: A Helpful, Introductory Tutorial](https://www.testim.io/blog/jest-testing-a-helpful-introductory-tutorial/) by Testim (2022)
-

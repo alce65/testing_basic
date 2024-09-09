@@ -6,6 +6,7 @@
     "type": "module",
     "scripts": {
         "test": "jest",
+        "test:c": "jest --coverage",
         "test:w": "jest --watchAll --collectCoverage",
         "test:node": "node --test **/*native*"
     },
