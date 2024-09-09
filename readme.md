@@ -29,6 +29,9 @@ Dia 2: Test unitarios con Jest
 - Revisión de ejercicios
   - Matchers de Jest
   - Excepciones y errores
-- TDD - BDD
+- TDD - BDD - ejemplo del factorial
 - Automatización de casos de uso
+
+Dia 3: Testing en el backend (unitarios y e2e)
+
 - [Stubs: Mocks y Spies]

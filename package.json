@@ -31,5 +31,8 @@
         "testPathIgnorePatterns": [
             "node_native"
         ]
+    },
+    "dependencies": {
+        "axios": "^1.7.7"
     }
 }
