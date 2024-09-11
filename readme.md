@@ -32,6 +32,14 @@ Dia 2: Test unitarios con Jest
 - TDD - BDD - ejemplo del factorial
 - Automatización de casos de uso
 
-Dia 3: Testing en el backend (unitarios y e2e)
+Dia 3: Testing unitarios (en el backend)
 
-- [Stubs: Mocks y Spies]
+- Tests y asincronía
+  - Callbacks
+  - Promesas. async /await
+- Stubs: Mocks y Spies
+  - Mocks de funciones
+  - Mocks de módulos
+  - Spies
+
+Dia 3: Testing en el backend (unitarios y e2e)
