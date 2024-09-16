@@ -28,9 +28,10 @@ describe("NotesController", () => {
         });
         it("should call next function when an error occurs", async () => {
             // arrange: Mock the NotesMongoRepo.getAll method to throw an error
+            const error = new Error("An error occurred");
             NotesMongoRepo.prototype.getAll = jest
                 .fn()
-                .mockRejectedValue(new Error("An error occurred"));
+                .mockRejectedValue(error);
 
             // arrange: Create a new NotesController instance
             const controller = new NotesController();
@@ -43,7 +44,8 @@ describe("NotesController", () => {
             // act: Call the controller.getAll method
             await controller.getAll(req, res, next);
             // assert: Verify that the next function was called
-            expect(next).toHaveBeenCalled();
+            // expect(next).toHaveBeenCalled();
+            expect(next).toHaveBeenCalledWith(error);
         });
     });
 });
